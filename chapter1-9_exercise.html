@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="chapter1-9_exercise.css">
+
+  <head>
+    <title>第９章　演習問題</title>
+  </head>
+
+  <body>
+    <div class="line-top"></div>
+
+    <main class="box">
+      <section class="box1">
+        <div class="step1">step1</div>
+        <div class="image1"></div>
+        <h3 class="title1">タイトルが入ります</h3>
+        <p class="text1">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+      </section>
+      <section class="box2">
+        <div class="step2">step2</div>
+        <div class="image2"></div>
+        <h3 class="title2">タイトルが入ります</h3>
+        <p class="text2">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+      </section>
+      <section class="box3">
+        <div class="step3">step3</div>
+        <div class="image3"></div>
+        <h3 class="title3">タイトルが入ります</h3>
+        <p class="text3">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p>
+      </section>
+    </main>
+
+    <div class="line-bottom"></div>
+
+  </body>
+</html>
+
+
+<!-- 解答を確認したうえで気づいたこと -->
+<!-- 今回、step、タイトル、テキストはすべて同じ形で作られるので、わざわざ1,2,3と分けなくてよかった -->
+<!-- headerタグ、footerタグ使うべきだった -->
+
+
+<!-- 上手くいかなったところ -->
+<!-- background-imageだと文字と写真が被って表示されたので、これを修正するために、imageのタグとtitleのタグを分けることで、被らないようにセットできた -->
+
+<!-- 今回写真を280pxと指定したが、guideには横幅指定はなかった。 -->
+<!-- 正解としては、box1,2,3を作った時点で、それに対してpadding: 10px;　を指定することで、写真も自動的に横幅が設定される仕組みだった -->
+<!-- そうすればbox1,2,3の上下左右が10pxずつ開くので、cssのtextでpaddingを打つ必要もなかった -->
